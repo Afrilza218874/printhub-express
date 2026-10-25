@@ -49,9 +49,3 @@ Website profil dan kalkulator estimasi harga cetak digital & outdoor printing un
    cd printhub-express
    ```
 3. Buka file `index.html` di browser Anda (atau gunakan ekstensi *Live Server* di VS Code / editor favorit).
-
----
-
-## 👥 Pengembang
-
-Dibuat oleh **Afrilza Maulid Ardiyan** untuk Mata Kuliah **Kewirausahaan 2**.
