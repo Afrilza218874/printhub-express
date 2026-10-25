@@ -18,7 +18,7 @@ const HARGA_PRODUK = {
 };
 
 // Nomor WhatsApp Tujuan (Ganti dengan nomor WA Anda, gunakan kode negara 62)
-const NOMOR_WA = "6281234567890";
+const NOMOR_WA = "62882007128448";
 
 // Fungsi untuk memformat angka ke Rupiah
 function formatRupiah(angka) {
