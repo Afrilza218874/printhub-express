@@ -1,0 +1,828 @@
+/* ==========================================================================
+   VARIABEL WARNA (Kombinasi Modern Korporat & Kreatif CMYK)
+   ========================================================================== */
+:root {
+    --primary-blue: #0F172A;
+    /* Biru Gelap Korporat / Profesional */
+    --accent-blue: #0284C7;
+    /* Cyan / Biru Cerah */
+    --cmyk-cyan: #00AEEF;
+    --cmyk-magenta: #EC008C;
+    --cmyk-yellow: #FFF200;
+    --cmyk-orange: #F59E0B;
+    /* Turunan Kuning/Oranye agar mudah dibaca */
+    --text-dark: #1E293B;
+    --text-muted: #64748B;
+    --bg-light: #F8FAFC;
+    --white: #FFFFFF;
+    --border-color: #E2E8F0;
+}
+
+/* ==========================================================================
+   RESET & TIPOGRAFI (Bold & Sans-Serif)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Baris Aksen CMYK di Paling Atas */
+.cmyk-bar {
+    height: 6px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--cmyk-cyan) 0%, var(--cmyk-magenta) 50%, var(--cmyk-orange) 100%);
+}
+
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
+.navbar {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo i {
+    color: var(--cmyk-cyan);
+}
+
+.logo span {
+    background: linear-gradient(90deg, var(--cmyk-magenta), var(--cmyk-orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--cmyk-magenta);
+}
+
+.btn-nav {
+    background-color: #25D366;
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-nav:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   HERO SECTION YANG SOLUTIF
+   ========================================================================== */
+.hero {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+    color: var(--white);
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.badge-cmyk {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    color: #38BDF8;
+}
+
+.hero-content h1 {
+    color: var(--white);
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+
+.hero-content p {
+    color: #CBD5E1;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, var(--cmyk-magenta), #F97316);
+    color: var(--white);
+    border: none;
+    padding: 1rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 20px rgba(236, 0, 140, 0.35);
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(236, 0, 140, 0.5);
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero-stats {
+    display: flex;
+    gap: 2.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 1.5rem;
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #38BDF8;
+}
+
+.stat-item span {
+    font-size: 0.9rem;
+    color: #94A3B8;
+}
+
+/* Kartu Visual Hero Kanan */
+.visual-card {
+    background: var(--white);
+    color: var(--text-dark);
+    padding: 2.2rem;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.cmyk-circles {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.2rem;
+}
+
+.circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: var(--white);
+}
+
+.circle.cyan {
+    background-color: var(--cmyk-cyan);
+}
+
+.circle.magenta {
+    background-color: var(--cmyk-magenta);
+}
+
+.circle.yellow {
+    background-color: var(--cmyk-orange);
+}
+
+.circle.key {
+    background-color: var(--primary-blue);
+}
+
+.visual-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.visual-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.spec-highlight {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background: var(--bg-light);
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.spec-highlight i {
+    color: #10B981;
+    margin-right: 8px;
+}
+
+/* ==========================================================================
+   BAGIAN INFORMATIF / KEUNGGULAN
+   ========================================================================== */
+.info-section {
+    padding: 4.5rem 0;
+    background-color: var(--white);
+}
+
+.section-header {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 3rem auto;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.section-header p {
+    color: var(--text-muted);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.info-card {
+    padding: 2rem;
+    border-radius: 12px;
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 1.2rem;
+}
+
+.cyan-bg {
+    background-color: var(--cmyk-cyan);
+}
+
+.magenta-bg {
+    background-color: var(--cmyk-magenta);
+}
+
+.yellow-bg {
+    background-color: var(--cmyk-orange);
+}
+
+.info-card h3 {
+    margin-bottom: 0.6rem;
+    font-size: 1.25rem;
+}
+
+.info-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   KATALOG BERBASIS GRID
+   ========================================================================== */
+.catalog-section {
+    padding: 5rem 0;
+    background-color: var(--bg-light);
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 2.2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.product-card:hover {
+    border-color: var(--cmyk-cyan);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-badge {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    background-color: var(--cmyk-cyan);
+    color: var(--white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product-badge.magenta {
+    background-color: var(--cmyk-magenta);
+}
+
+.product-badge.yellow {
+    background-color: var(--cmyk-orange);
+}
+
+.product-icon {
+    width: 65px;
+    height: 65px;
+    background: #F1F5F9;
+    color: var(--primary-blue);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.8rem;
+}
+
+.product-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+}
+
+.product-specs {
+    list-style: none;
+    margin-bottom: 1.8rem;
+    border-top: 1px dashed var(--border-color);
+    border-bottom: 1px dashed var(--border-color);
+    padding: 1rem 0;
+}
+
+.product-specs li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.product-specs li:last-child {
+    margin-bottom: 0;
+}
+
+.product-specs i {
+    color: var(--accent-blue);
+    width: 18px;
+}
+
+.price-box {
+    margin-top: auto;
+    margin-bottom: 1.2rem;
+}
+
+.price-label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.price-value {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    font-family: 'Poppins', sans-serif;
+}
+
+.price-value small {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.btn-calc {
+    width: 100%;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-calc:hover {
+    background-color: var(--cmyk-magenta);
+}
+
+/* ==========================================================================
+   MODAL KALKULATOR ESTIMASI HARGA
+   ========================================================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(4px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--white);
+    width: 100%;
+    max-width: 520px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    animation: munculModal 0.25s ease-out;
+}
+
+@keyframes munculModal {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    color: var(--white);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.8rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    outline: none;
+    border-color: var(--cmyk-cyan);
+}
+
+.form-group small {
+    display: block;
+    color: var(--text-muted);
+    margin-top: 4px;
+    font-size: 0.8rem;
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.result-box {
+    background: #F0F9FF;
+    border: 2px solid #BAE6FD;
+    padding: 1.2rem;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+}
+
+.result-detail {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+}
+
+.result-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-total span {
+    font-weight: 700;
+}
+
+.result-total strong {
+    font-size: 1.6rem;
+    color: var(--cmyk-magenta);
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-footer {
+    padding: 1rem 1.5rem;
+    background: var(--bg-light);
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.btn-batal {
+    padding: 0.8rem 1.2rem;
+    border: 1px solid var(--border-color);
+    background: var(--white);
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-pesan-wa {
+    padding: 0.8rem 1.4rem;
+    background: #25D366;
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+
+.btn-pesan-wa:hover {
+    background: #1ebe5d;
+}
+
+/* ==========================================================================
+   FOOTER & SOSIAL MEDIA
+   ========================================================================== */
+.footer {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 4rem 0 2rem 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-brand h2 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.footer-brand h2 span {
+    color: var(--cmyk-cyan);
+}
+
+.footer-brand p {
+    color: #94A3B8;
+    max-width: 400px;
+}
+
+.footer-social h3 {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.footer-social p {
+    color: #94A3B8;
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.9rem 1.4rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--white);
+    transition: transform 0.2s;
+    flex: 1;
+    min-width: 220px;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+}
+
+.social-btn i {
+    font-size: 2rem;
+}
+
+.social-btn span {
+    display: block;
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.social-btn strong {
+    font-size: 1rem;
+}
+
+.wa-btn {
+    background: #25D366;
+}
+
+.ig-btn {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    color: #64748B;
+    font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (Layar HP & Tablet)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
