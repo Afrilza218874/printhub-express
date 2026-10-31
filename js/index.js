@@ -117,7 +117,7 @@ function pesanViaWA() {
         detailUkuran = `\n- Ukuran: ${panjang}m x ${lebar}m`;
     }
 
-    const pesan = `Halo Admin *PrintHub Express*, saya ingin memesan layanan cetak dengan rincian berikut:\n\n` +
+    const pesan = `Halo Admin *PrintHub*, saya ingin memesan layanan cetak dengan rincian berikut:\n\n` +
         `- Layanan: *${namaProduk}*${detailUkuran}\n` +
         `- Jumlah: *${jumlah} ${kodeProduk === 'mmt' ? 'Pcs' : 'Lembar'}*\n` +
         `- Estimasi Total: *${totalTeks}*\n\n` +
